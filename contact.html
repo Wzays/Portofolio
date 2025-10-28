@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Saya - Form Kontak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header dengan Navigasi -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h2>PortfolioKu</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Kontak</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="contact">
+        <div class="container">
+            <h1>Form Request Project</h1>
+            <p>Isi form di bawah ini untuk mengajukan permintaan pembuatan website</p>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="service">Jenis Layanan</label>
+                    <select id="service" name="service" required>
+                        <option value="">Pilih Jenis Layanan</option>
+                        <option value="website">Website Company Profile</option>
+                        <option value="ecommerce">Website E-Commerce</option>
+                        <option value="webapp">Aplikasi Web</option>
+                        <option value="mobile">Aplikasi Mobile</option>
+                        <option value="other">Lainnya</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Budget Project</label>
+                    <div class="radio-group">
+                        <label class="option"><input type="radio" id="budget1" name="budget" value="1-5">Rp 1-5 Juta</label>
+                        <label class="option"><input type="radio" id="budget2" name="budget" value="5-10">Rp 5-10 Juta</label>
+                        <label class="option"><input type="radio" id="budget3" name="budget" value="10+">Rp 10 Juta</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="timeline">Timeline Pengerjaan</label>
+                    <div class="checkbox-group">
+                        <label class="option"><input type="checkbox" id="timeline1" name="timeline" value="1month">1 Bulan</label>  
+                        <label class="option"><input type="checkbox" id="timeline2" name="timeline" value="3month">3 Bulan</label>        
+                        <label class="option"><input type="checkbox" id="timeline3" name="timeline" value="flexible">Fleksibel</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Deskripsi Proyek</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn submit-btn">Kirim Permintaan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Portfolio Saya. All rights reserved.</p>
+            <p>Link ke <a href="https://www.itpln.ac.id" target="_blank">ITPLN</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
